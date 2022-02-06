@@ -3,7 +3,7 @@
 | ---- | ---- |
 **Name**: | Muhammad Shakeel  |
 **Student ID**: | 21924162 |
-**Course:** | Artificial Intelegnce |
+**Course:** | Artificial Intelligence |
 **Module**: | CO453     |
 **Started**: | January 2022 |    
 
