@@ -3,10 +3,10 @@
 namespace ConsoleAppProject.App01
 {
     /// <summary>
-    /// Please describe the main features of this App
+    /// Convert distance from 4 different units and vice versa.
     /// </summary>
     /// <author>
-    /// Student Name version 0.1
+    /// Muhammad Shakeel version 0.1
     /// </author>
     public class DistanceConverter
     {
