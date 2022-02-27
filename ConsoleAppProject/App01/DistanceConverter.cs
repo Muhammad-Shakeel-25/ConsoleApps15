@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace ConsoleAppProject.App01
 {
     /// <summary>
@@ -16,10 +15,8 @@ namespace ConsoleAppProject.App01
         string choice1;
         string choice2;
         string FromDistanceValue;
-        string[] choices = new string[] { "Feet", "Metres", "Kilometres", "Miles" };
-     
+        string[] choices = new string[] { $"{DistanceUnits.Feet}", $"{DistanceUnits.Metres}", $"{DistanceUnits.Kilometres}", $"{DistanceUnits.Miles}" };
        ///Constructer to initlize the program 
-        
         public DistanceConverter()
         {
             ShowChoices();
@@ -48,10 +45,7 @@ namespace ConsoleAppProject.App01
                 InvalidChoice();
 
             }
-
-
         }
-
         /// <summary>
         /// use to return double value of the given distance.Calculate the from distance to, to distance
         /// </summary>
@@ -129,36 +123,22 @@ namespace ConsoleAppProject.App01
             }
 
         }
-
-
         /// <summary>
         /// used to show all choices for distance converter 
         /// </summary>
         private void ShowChoices()
         {
-
-
             for (int i = 0; i < choices.Length; i++)
             {
                 Console.WriteLine((i + 1) + ") " + choices[i] + "");
             }
-
-
         }
-
-
         /// <summary>
         /// if there is any invalid choice it will show the error message
         /// </summary>
         private void InvalidChoice()
         {
-
             Console.WriteLine("Your choice is invalid.");
-            ///DistanceConverter d=new DistanceConverter();
-
         }
-
-
-
     }
 }
