@@ -40,6 +40,7 @@ namespace ConsoleAppProject
             else if(selection=="2")
             {
                 BMI bmi = new BMI();
+                bmi.Calculate();
             }
             else
             {

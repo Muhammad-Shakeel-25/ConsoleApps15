@@ -35,9 +35,9 @@ namespace ConsoleAppProject.App01
                 choice2 = Console.ReadLine();
                 if (Convert.ToInt32(choice2) < 5)
                 {
-                    Console.WriteLine(FromDistanceValue + " " + choices[Convert.ToInt32(choice1) - 1] + " to " + choices[Convert.ToInt32(choice2) - 1] + " is");
+                    Console.WriteLine(FromDistanceValue + " " + choices[Convert.ToInt32(choice1) - 1] + " is " +  OutputResult() +" "+ choices[Convert.ToInt32(choice2) - 1]);
 
-                    Console.WriteLine(OutputResult());
+                   
                 }
                 else
                 {
