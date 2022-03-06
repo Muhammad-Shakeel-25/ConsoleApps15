@@ -19,6 +19,10 @@ namespace ConsoleAppProject.App01
        ///Constructer to initlize the program 
         public DistanceConverter()
         {
+            
+        }
+        public void Run()
+        {
             ShowChoices();
             Console.WriteLine("Enter your 1st choice?");
             choice1 = Console.ReadLine();
@@ -32,7 +36,7 @@ namespace ConsoleAppProject.App01
                 if (Convert.ToInt32(choice2) < 5)
                 {
                     Console.WriteLine(FromDistanceValue + " " + choices[Convert.ToInt32(choice1) - 1] + " to " + choices[Convert.ToInt32(choice2) - 1] + " is");
-                    
+
                     Console.WriteLine(OutputResult());
                 }
                 else
@@ -45,6 +49,7 @@ namespace ConsoleAppProject.App01
                 InvalidChoice();
 
             }
+
         }
         /// <summary>
         /// use to return double value of the given distance.Calculate the from distance to, to distance
