@@ -48,39 +48,10 @@ namespace ConsoleAppProject.App03
             }
             else if (choice == 5)
             {
-                ShowGradeProfile();
+                CalculateAndShowGradeProfile();
             }
         }
-
-        private void ShowGradeProfile()
-        {
-            int A_Grade, B_Grade, C_Grade, D_Grade, F_Grade;
-            A_Grade = 0;
-            B_Grade = 0;
-            C_Grade = 0;
-            D_Grade = 0;
-            F_Grade = 0;
-            for (int i = 0; i < studentName.Length; i++)
-            {
-                if (CalculateGrades(studentMark[i]) == "A")
-                    A_Grade = A_Grade + 1;
-                else if (CalculateGrades(studentMark[i]) == "B")
-                    B_Grade = B_Grade + 1;
-                else if (CalculateGrades(studentMark[i]) == "C")
-                    C_Grade = C_Grade + 1;
-                else if (CalculateGrades(studentMark[i]) == "D")
-                    D_Grade = D_Grade + 1;
-                else if (CalculateGrades(studentMark[i]) == "F")
-                    F_Grade = F_Grade + 1;
-            }
-
-
-            Console.WriteLine(" A Grade: Count " + A_Grade+" ("+(A_Grade*100/studentMark.Length)+"%)");
-            Console.WriteLine(" B Grade: Count " + B_Grade + " (" + (B_Grade * 100 / studentMark.Length) + "%)");
-            Console.WriteLine(" C Grade: Count " + C_Grade + " (" + (C_Grade * 100 / studentMark.Length) + "%)");
-            Console.WriteLine(" D Grade: Count " + D_Grade + " (" + (D_Grade * 100 / studentMark.Length) + "%)");
-            Console.WriteLine(" F Grade: Count " + F_Grade + " (" + (F_Grade * 100 / studentMark.Length) + "%)");
-        }
+        
 
         // Calculate Statistic
         private void CalculateStatistics()
@@ -168,6 +139,36 @@ namespace ConsoleAppProject.App03
             else
                 return "X";
 
+        }
+        // Calculate and show Grade Profile
+        private void CalculateAndShowGradeProfile()
+        {
+            int A_Grade, B_Grade, C_Grade, D_Grade, F_Grade;
+            A_Grade = 0;
+            B_Grade = 0;
+            C_Grade = 0;
+            D_Grade = 0;
+            F_Grade = 0;
+            for (int i = 0; i < studentName.Length; i++)
+            {
+                if (CalculateGrades(studentMark[i]) == "A")
+                    A_Grade = A_Grade + 1;
+                else if (CalculateGrades(studentMark[i]) == "B")
+                    B_Grade = B_Grade + 1;
+                else if (CalculateGrades(studentMark[i]) == "C")
+                    C_Grade = C_Grade + 1;
+                else if (CalculateGrades(studentMark[i]) == "D")
+                    D_Grade = D_Grade + 1;
+                else if (CalculateGrades(studentMark[i]) == "F")
+                    F_Grade = F_Grade + 1;
+            }
+
+
+            Console.WriteLine(" A Grade: Count " + A_Grade + " (" + (A_Grade * 100 / studentMark.Length) + "%)");
+            Console.WriteLine(" B Grade: Count " + B_Grade + " (" + (B_Grade * 100 / studentMark.Length) + "%)");
+            Console.WriteLine(" C Grade: Count " + C_Grade + " (" + (C_Grade * 100 / studentMark.Length) + "%)");
+            Console.WriteLine(" D Grade: Count " + D_Grade + " (" + (D_Grade * 100 / studentMark.Length) + "%)");
+            Console.WriteLine(" F Grade: Count " + F_Grade + " (" + (F_Grade * 100 / studentMark.Length) + "%)");
         }
     }
 }
