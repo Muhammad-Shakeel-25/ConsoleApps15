@@ -29,7 +29,7 @@ namespace ConsoleAppProject
 
 
 
-            Console.WriteLine("1) Distance Converter\n2) BMI Calculater");
+            Console.WriteLine("1) Distance Converter\n2) BMI Calculater\n3) Student Marks");
             string selection = Console.ReadLine();
 
             if (selection == "1")
@@ -41,6 +41,11 @@ namespace ConsoleAppProject
             {
                 BMI bmi = new BMI();
                 bmi.Calculate();
+            }
+            else if (selection == "3")
+            {
+                StudentGrades studentgrades = new StudentGrades();
+                studentgrades.Run();            
             }
             else
             {
