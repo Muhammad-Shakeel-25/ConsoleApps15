@@ -1,6 +1,7 @@
 ﻿using ConsoleAppProject.App01;
 using ConsoleAppProject.App02;
 using ConsoleAppProject.App03;
+using ConsoleAppProject.App04;
 using ConsoleAppProject.Helpers;
 using System;
 
@@ -29,7 +30,7 @@ namespace ConsoleAppProject
 
 
 
-            Console.WriteLine("1) Distance Converter\n2) BMI Calculater\n3) Student Marks");
+            Console.WriteLine("1) Distance Converter\n2) BMI Calculater\n3) Student Marks\n4) Social Network");
             string selection = Console.ReadLine();
 
             if (selection == "1")
@@ -46,6 +47,11 @@ namespace ConsoleAppProject
             {
                 StudentGrades studentgrades = new StudentGrades();
                 studentgrades.Run();            
+            }
+            else if (selection == "4")
+            {
+                SocialNetwork socialnetwork = new SocialNetwork();
+                socialnetwork.Run();
             }
             else
             {
