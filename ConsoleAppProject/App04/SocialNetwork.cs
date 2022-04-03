@@ -71,7 +71,7 @@ namespace ConsoleAppProject.App04
             post[id] = Console.ReadLine();
             like[id] = 0;
             id++;
-
+            Console.WriteLine(" Post added");
             ReRun();
 
         }
@@ -84,7 +84,7 @@ namespace ConsoleAppProject.App04
             post[id] = Console.ReadLine();
             like[id] = 0;
             id++;
-
+            Console.WriteLine(" Post added");
             ReRun();
         }
 
