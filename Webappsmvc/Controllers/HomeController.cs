@@ -22,7 +22,10 @@ namespace Webappsmvc.Controllers
         {
             return View();
         }
-
+        public IActionResult SocialNetwork()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
